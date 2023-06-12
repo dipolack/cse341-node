@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Christian",
+      "lastName": "Torres",
+      "email": "christorres@test.com",
+      "favoriteColor": "Blue",
+      "birthday": "01/25/1995"
+    },
+    "contact2": {
+      "firstName": "Alessandro",
+      "lastName": "Torres",
+      "email": "alessandrotorres@test.com",
+      "favoriteColor": "Yellow",
+      "birthday": "07/17/2020"
+    },
+    "contact3": {
+      "firstName": "Thiago",
+      "lastName": "Alonso",
+      "email": "thiagoalonso@test.com",
+      "favoriteColor": "Gold",
+      "birthday": "04/08/2015"
+    }
+  }
