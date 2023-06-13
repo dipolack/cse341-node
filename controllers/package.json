@@ -2,12 +2,10 @@
   "name": "cse341-node",
   "version": "1.0.0",
   "description": "",
-  "main": "controllers/server.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "node server.js"
-
+  "main": "server.js",
+"scripts": {
+  "start": "node server.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
