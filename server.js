@@ -9,8 +9,12 @@ const mongodb = require('./controllers/db/connection');
 
 const port = process.env.PORT || 8080;
 
-app.use('/contacts', req);
+// Use the body-parser middleware before the routes.
 app.use(parser.json());
+
+// Now use the routes.
+app.use('/contacts', req);
+
 mongodb.initDb((err, mongodb) => {
   if (err) {
     console.log(err);

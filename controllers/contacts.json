@@ -1,23 +1,30 @@
-{
-    "contact": {
-      "firstName": "Christian",
-      "lastName": "Torres",
-      "email": "christorres@test.com",
-      "favoriteColor": "Blue",
-      "birthday": "01/25/1995"
-    },
-    "contact2": {
-      "firstName": "Alessandro",
-      "lastName": "Torres",
-      "email": "alessandrotorres@test.com",
-      "favoriteColor": "Yellow",
-      "birthday": "07/17/2020"
-    },
-    "contact3": {
-      "firstName": "Thiago",
-      "lastName": "Alonso",
-      "email": "thiagoalonso@test.com",
-      "favoriteColor": "Gold",
-      "birthday": "04/08/2015"
-    }
+[
+  {
+    "firstName": "Alessandro",
+    "lastName": "Torres",
+    "email": "alessandrotorres@test.com",
+    "favoriteColor": "Yellow",
+    "birthday": "07/17/2020"
+  },
+  {
+    "firstName": "Thiago",
+    "lastName": "Alonso",
+    "email": "thiagoalonso@test.com",
+    "favoriteColor": "Gold",
+    "birthday": "04/08/2015"
+  },
+  {
+    "firstName": "Molly",
+    "lastName": "Polack",
+    "email": "mollypolack@test.com",
+    "favoriteColor": "White",
+    "birthday": "06/15/2019"
+  },
+  {
+    "firstName": "Bailey",
+    "lastName": "Madrid",
+    "email": "baileymadrid@gmail.com",
+    "favoriteColor": "Black",
+    "birthday": "09/23/2019"
   }
+]
