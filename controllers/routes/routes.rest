@@ -4,16 +4,8 @@ GET http://localhost:8080/contacts/648d27ccfe7e460d3ac32753
 ###
 POST http://localhost:8080/contacts
 Content-Type: application/json
-
-{
-  "firstName": "Dorca",
-  "lastName": "Polack",
-  "email": "dorcapolack@test.com",
-  "favColor": "Red",
-  "birthday": "07/18/1994"
-}
 ###
-PUT http://localhost:8080/contacts/648d27ccfe7e460d3ac32755
+PUT http://localhost:8080/contacts/648d367afe7e460d3ac32756
 Content-Type: application/json
 
 {
@@ -24,4 +16,4 @@ Content-Type: application/json
   "birthday": "04/08/2015"
 }
 ###
-DELETE http://localhost:8080/contacts/648d27ccfe7e460d3ac32755
+DELETE http://localhost:8080/contacts/648d367afe7e460d3ac32756
