@@ -1,0 +1,48 @@
+// LOCALHOST ### 
+GET http://localhost:8080/contacts 
+
+### create post###
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Dorca", "lastName":"Polack", "email":"dorcapolack@test.com", "favoriteColor":"Red", "birthday":"07/18/1994"
+}
+
+### PUT contact###
+ PUT http://localhost:8080/contacts/648fd789f3c22b6f6d4e302c HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Molly", "lastName":"Polack", "email":"mollypolack@test.com", "favoriteColor":"White", "birthday":"06/15/2019"
+}
+
+### DELETE contact###
+ DELETE http://localhost:8080/contacts/648fd789f3c22b6f6d4e302c HTTP/1.1
+
+
+### DEV PRODUCTION###
+
+### GET default###
+GET https://cse341-node-6oti.onrender.com/ 
+### GET 404###
+ GET https://cse341-node-6oti.onrender.com/404 
+### GET API swagger docs###
+GET https://cse341-node-6oti.onrender.com/api-docs 
+### GET all contacts###
+GET https://cse341-node-6oti.onrender.com/contacts 
+### GET 1 contact###
+GET https://cse341-node-6oti.onrender.com/contacts/648fd789f3c22b6f6d4e302d 
+### POST - create contact###
+POST http://cse341-node-6oti.onrender.com/contacts HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Dorca", "lastName":"Polack", "email":"dorcapolack@test.com", "favoriteColor":"Red", "birthday":"07/18/1994"
+}
+### PUT - update contact###
+PUT http://cse341-psei.onrender.com/contacts/648fd789f3c22b6f6d4e302f HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Molly", "lastName":"Polack", "email":"mollypolack@test.com", "favoriteColor":"White", "birthday":"06/15/2019"
+}
+
+### DELETE contact###
+DELETE http://cse341-psei.onrender.com/contacts/63c0723ecba10a8bdcd6290f HTTP/1.1

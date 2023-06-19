@@ -1,25 +1,35 @@
 const express = require('express');
-const req = require('./controllers/routes/contacts');
-const app = express();
+const port = process.env.PORT || 8080;
+var logger = require('morgan');
 const dotenv = require('dotenv');
-const parser = require('body-parser');
+const bodyParser = require('body-parser');
+const mongodb = require('./db/connect');
 dotenv.config();
 
-const mongodb = require('./controllers/db/connection');
+const app = express();
 
-const port = process.env.PORT || 8080;
+app
+  .use(bodyParser.json())
+  .use(logger('dev'))
+  .use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader(
+      'Access-Control-Allow-Headers',
+      'Origin, X-Requested-With, Content-Type, Accept'
+    );
+    res.setHeader(
+      'Access-Control-Allow-Methods',
+      'GET, POST, PUT, DELETE'
+    );
+    next();
+  })
+  .use('/', require('./routes'));
 
-// Use the body-parser middleware before the routes.
-app.use(parser.json());
-
-// Now use the routes.
-app.use('/contacts', req);
-
-mongodb.initDb((err, mongodb) => {
+mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {
-    app.listen(process.env.PORT);
-    console.log(`Connected to DB and listening on ${process.env.PORT}`);
+    app.listen(port);
+    console.log(`Connected to DB and listening on ${port}`);
   }
 });
