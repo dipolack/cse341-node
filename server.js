@@ -19,7 +19,7 @@ app
     );
     res.setHeader(
       'Access-Control-Allow-Methods',
-      'GET, POST, PUT, DELETE'
+      'GET, POST, PATCH, PUT, DELETE, OPTIONS'
     );
     next();
   })
