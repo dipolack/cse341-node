@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "API",
+    "title": "Client Management",
+    "description": "Client Management System API - BYUI CSE 341",
     "version": "1.0.0"
   },
   "host": "cse341-node-6oti.onrender.com",
@@ -22,7 +22,7 @@
         }
       }
     },
-    "/contacts/": {
+    "/clients/": {
       "post": {
         "description": "",
         "parameters": [
@@ -32,19 +32,22 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "clientName": {
                   "example": "any"
                 },
-                "lastName": {
+                "contactInfo": {
                   "example": "any"
                 },
-                "email": {
+                "registeredAt": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "lastContacted": {
                   "example": "any"
                 },
-                "birthday": {
+                "accountManager": {
+                  "example": "any"
+                },
+                "location": {
                   "example": "any"
                 }
               }
@@ -73,7 +76,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/clients/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -108,19 +111,22 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "clientName": {
                   "example": "any"
                 },
-                "lastName": {
+                "contactInfo": {
                   "example": "any"
                 },
-                "email": {
+                "registeredAt": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "lastContacted": {
                   "example": "any"
                 },
-                "birthday": {
+                "accountManager": {
+                  "example": "any"
+                },
+                "location": {
                   "example": "any"
                 }
               }

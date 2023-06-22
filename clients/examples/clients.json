@@ -1,0 +1,34 @@
+[
+    {
+        "clientName": "Lee Wong",
+        "contactInfo": "leewong@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Jhon Smith",
+        "location": "340, 120, 115"
+    },
+    {
+        "clientName": "Luna Han",
+        "contactInfo": "lunahan@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Han Soo",
+        "location": "349, 747, 123"
+    },
+    {
+        "clientName": "Minnie Mae",
+        "contactInfo": "minniemae@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Ron Weasley",
+        "location": "320, 130, 112"
+    },
+    {
+        "clientName": "Helen Man",
+        "contactInfo": "helenman@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Tara Lou",
+        "location": "399, 128, 138"
+    }
+]

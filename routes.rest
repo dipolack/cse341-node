@@ -1,22 +1,32 @@
 // LOCALHOST ### 
-GET http://localhost:8080/contacts
+GET http://localhost:8080/clients/
 
 ### create post###
-POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+POST http://localhost:8080/clients HTTP/1.1 content-type: application/json
 
-{
-"firstName":"Dorca", "lastName":"Polack", "email":"dorcapolack@test.com", "favoriteColor":"Red", "birthday":"07/18/1994"
-}
+    {
+        "clientName": "Lois Lane",
+        "contactInfo": "loislane@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Maria Chavez",
+        "location": "342, 140, 135"
+    }
 
 ### PUT contact###
- PUT http://localhost:8080/contacts/648fd789f3c22b6f6d4e302c HTTP/1.1 content-type: application/json
+ PUT http://localhost:8080/clients/6493c1263cb95133c763ec6e HTTP/1.1 content-type: application/json
 
-{
-"firstName":"Molly", "lastName":"Polack", "email":"mollypolack@test.com", "favoriteColor":"White", "birthday":"06/15/2019"
-}
+    {
+        "clientName": "Lee Wong",
+        "contactInfo": "leewong@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Jhon Smith",
+        "location": "340, 120, 115"
+    }
 
 ### DELETE contact###
- DELETE http://localhost:8080/contacts/648fd789f3c22b6f6d4e302c HTTP/1.1
+ DELETE http://localhost:8080/clients/6493c1263cb95133c763ec6e HTTP/1.1
 
 
 ### DEV PRODUCTION###
@@ -27,21 +37,30 @@ GET https://cse341-node-6oti.onrender.com/
 ### GET API swagger docs###
 GET https://cse341-node-6oti.onrender.com/api-docs 
 ### GET all contacts###
-GET https://cse341-node-6oti.onrender.com/contacts 
+GET https://cse341-node-6oti.onrender.com/clients 
 ### GET 1 contact###
-GET https://cse341-node-6oti.onrender.com/contacts/648fd789f3c22b6f6d4e302d 
+GET https://cse341-node-6oti.onrender.com/clients/6493c1263cb95133c763ec6f
 ### POST - create contact###
-POST http://cse341-node-6oti.onrender.com/contacts HTTP/1.1 content-type: application/json
+POST http://cse341-node-6oti.onrender.com/clients HTTP/1.1 content-type: application/json
 
-{
-"firstName":"Dorca", "lastName":"Polack", "email":"dorcapolack@test.com", "favoriteColor":"Red", "birthday":"07/18/1994"
-}
+    {
+        "clientName": "Lee Wong",
+        "contactInfo": "leewong@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Jhon Smith",
+        "location": "340, 120, 115"
+    }
 ### PUT - update contact###
-PUT http://cse341-node-6oti.onrender.com/contacts/648fd789f3c22b6f6d4e302f HTTP/1.1 content-type: application/json
+PUT http://cse341-node-6oti.onrender.com/clients/6493c1263cb95133c763ec70 HTTP/1.1 content-type: application/json
 
-{
-"firstName":"Molly", "lastName":"Polack", "email":"mollypolack@test.com", "favoriteColor":"White", "birthday":"06/15/2019"
-}
-
+    {
+        "clientName": "Mickey Mae",
+        "contactInfo": "mickeymae@gmail.com",
+        "registeredAt": "02/01/2023",
+        "lastContacted": "04/01/2023",
+        "accountManager": "Jhon Smith",
+        "location": "343, 122, 113"
+    }
 ### DELETE contact###
-DELETE http://cse341-node-6oti.onrender.com/contacts/63c0723ecba10a8bdcd6290f HTTP/1.1
+DELETE http://cse341-node-6oti.onrender.com/clients/6493c4ac3cb95133c763ec74 HTTP/1.1

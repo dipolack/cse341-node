@@ -1,11 +1,8 @@
 const express = require('express');
 const port = process.env.PORT || 8080;
 var logger = require('morgan');
-const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
-dotenv.config();
-
 const app = express();
 
 app
