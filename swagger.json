@@ -14,7 +14,6 @@
     "/": {
       "get": {
         "description": "",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -68,7 +67,6 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -165,8 +163,11 @@
     "/api-docs/": {
       "get": {
         "description": "",
-        "parameters": [],
-        "responses": {}
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
       }
     }
   }
