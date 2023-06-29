@@ -2,18 +2,12 @@ var mongoose = require('mongoose');
 
 const clientSchema = mongoose.Schema({
     clientName: { type: String, required: true },
-    contactInfo: { 
-        email: { type: String, required: true },
-        phone: { type: String, required: false }
-    },
+    contactInfo: { type: String, required: true },
     registeredAt: { type: Date, default: Date.now },
     lastContacted: { type: Date, default: Date.now },
     accountManager: { type: String, required: true },
-    location: { 
-        address: { type: String, required: false },
-        city: { type: String, required: false },
-        country: { type: String, required: false }
-    }
+    location: { type: String, required: true },
+    InvestmentAmount: { type: String, required:true},
 });
 
 module.exports = mongoose.model('Client', clientSchema);

@@ -27,7 +27,7 @@ const createClient = async (req, res) => {
     lastContacted: req.body.lastContacted,
     accountManager: req.body.accountManager,
     location: req.body.location,
-    InvestmentAmount: req.body.InvestmentAmount // Add this line
+    InvestmentAmount: req.body.InvestmentAmount // Adding 7th input
   });
   const response = await mongodb.getDb().db().collection('clients').insertOne(client);
   if (response.acknowledged) {
@@ -50,7 +50,7 @@ const updateClient = async (req, res) => {
     lastContacted: req.body.lastContacted,
     accountManager: req.body.accountManager,
     location: req.body.location,
-    InvestmentAmount: req.body.InvestmentAmount // Add this line
+    InvestmentAmount: req.body.InvestmentAmount // Adding 7th input
   };
   const response = await mongodb
     .getDb()
