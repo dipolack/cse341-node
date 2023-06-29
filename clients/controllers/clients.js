@@ -26,7 +26,8 @@ const createClient = async (req, res) => {
     registeredAt: req.body.registeredAt,
     lastContacted: req.body.lastContacted,
     accountManager: req.body.accountManager,
-    location: req.body.location
+    location: req.body.location,
+    InvestmentAmount: req.body.InvestmentAmount // Add this line
   });
   const response = await mongodb.getDb().db().collection('clients').insertOne(client);
   if (response.acknowledged) {
@@ -48,7 +49,8 @@ const updateClient = async (req, res) => {
     registeredAt: req.body.registeredAt,
     lastContacted: req.body.lastContacted,
     accountManager: req.body.accountManager,
-    location: req.body.location
+    location: req.body.location,
+    InvestmentAmount: req.body.InvestmentAmount // Add this line
   };
   const response = await mongodb
     .getDb()
@@ -65,6 +67,7 @@ const updateClient = async (req, res) => {
     res.status(500).json(response.error || 'Some error occurred while updating the client.');
   }
 };
+
 
 const deleteClient = async (req, res) => {
   const clientId = new ObjectId(req.params.id);

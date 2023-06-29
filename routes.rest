@@ -22,7 +22,8 @@ POST http://localhost:8080/clients HTTP/1.1 content-type: application/json
         "registeredAt": "02/01/2023",
         "lastContacted": "04/01/2023",
         "accountManager": "Jhon Smith",
-        "location": "340, 120, 115"
+        "location": "340, 120, 115",
+        " InvestmentAmount": "100",
     }
 
 ### DELETE contact###

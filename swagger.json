@@ -48,6 +48,9 @@
                 },
                 "location": {
                   "example": "any"
+                },
+                "InvestmentAmount": {
+                  "example": "any"
                 }
               }
             }
@@ -125,6 +128,9 @@
                   "example": "any"
                 },
                 "location": {
+                  "example": "any"
+                },
+                "InvestmentAmount": {
                   "example": "any"
                 }
               }
